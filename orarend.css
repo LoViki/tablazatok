@@ -1,0 +1,56 @@
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+
+    /* sarok kerekítése */
+    /* border-radius: 12px; */
+}
+
+table{
+    /* Alapértelmezett beállítás */
+    /* border-collapse: separate; */
+    /* ezzel lesz a border 2 vonalas helyett 1 vonalas */
+    border-collapse: collapse; 
+    /* szélesség beállítása */
+    width: 100%;
+    /* középre hozás csak akkor jó a margin, ha előtte van max-width */
+    max-width: 900px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+td, th{
+    /* a keret messzeb lesz a rubrikákban lévő szövegtől */
+    padding: 6px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr{
+    background-color: gainsboro;
+}
+
+/* adott sor színezése */
+tr:nth-child(2){
+    background-color: red;
+}
+
+/* páratlan -odd, vagy páros - even sorok formázása */
+tr:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(odd){
+    background-color: lightgray;
+    /* ha a fejlécünkben csak 1 sor van, az is ilyen színű lesz */
+}
+
+th {
+    background-color: green;
+}
+
+caption{
+    padding-bottom: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
